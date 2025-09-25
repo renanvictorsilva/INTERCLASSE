@@ -59,13 +59,11 @@ img:hover {
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-/* Botão */
+/* Botões gerais */
 .botao {
   display: inline-block;
   padding: 12px 24px;
   margin: 10px;
-  background: #FFD700; /* amarelo */
-  color: #000; /* texto preto para contraste */
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
@@ -74,12 +72,24 @@ img:hover {
   transition: background 0.3s, transform 0.2s;
 }
 
-.botao:hover {
-  background: #FFC300; /* amarelo mais vibrante no hover */
+/* Botão amarelo para Jogos */
+.botao.amarelo {
+  background: #FFD700; /* amarelo */
+  color: #000; /* texto preto */
+}
+
+.botao.amarelo:hover {
+  background: #FFC300; /* amarelo mais vibrante */
   transform: scale(1.05);
 }
 
-.botao:hover {
-  background: #00c972;
+/* Botão verde para Voltar */
+.botao.verde {
+  background: #009e60; /* verde */
+  color: #fff;
+}
+
+.botao.verde:hover {
+  background: #00c972; /* verde mais vibrante */
   transform: scale(1.05);
 }
