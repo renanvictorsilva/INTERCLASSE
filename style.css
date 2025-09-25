@@ -1,0 +1,38 @@
+/* Estilos gerais */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0077b6, #00b44e);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  font-size: 2rem;
+  margin: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* Imagem */
+img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 5px solid #fff;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}

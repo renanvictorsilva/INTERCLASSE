@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classificação Provisória - Campeonato de Vôlei</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin: 20px;
+      color: #333;
+    }
+    img {
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    img:hover {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+  <h1>CAMPEONATO DE VÔLEI - TEOTÔNIO<br>CLASSIFICAÇÃO PROVISÓRIA</h1>
+
+  <a href="imagem.jpg" target="_blank">
+    <img id="img-dia" src="imagem.jpg" alt="Imagem do dia">
+  </a>
+
+  <script>
+    // Forçar sempre carregar a imagem nova (evitar cache do navegador)
+    const img = document.getElementById("img-dia");
+    img.src = "imagem.jpg?t=" + new Date().getTime();
+  </script>
+</body>
+</html>
