@@ -19,6 +19,8 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  color: #ffffff; /* força a cor branca */
+
 }
 
 /* Imagem */
@@ -26,7 +28,7 @@ img {
   max-width: 90%;
   max-height: 80vh;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 15px rgba(254, 0, 0, 0.3);
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
   border: 5px solid #fff;
