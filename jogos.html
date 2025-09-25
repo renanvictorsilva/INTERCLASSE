@@ -1,29 +1,30 @@
+📄 jogos.html (com cabeçalho fixo)
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classificação Provisória - Campeonato de Vôlei</title>
+  <title>Jogos - Campeonato de Vôlei</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>CAMPEONATO DE VÔLEI - TEOTÔNIO</h1>
-    <h2>CLASSIFICAÇÃO PROVISÓRIA</h2>
+    <h2>JOGOS</h2>
   </header>
 
   <main>
-    <a href="imagem.jpg" target="_blank">
-      <img id="img-dia" src="imagem.jpg" alt="Imagem do dia">
+    <a href="jogos.jpg" target="_blank">
+      <img id="img-jogos" src="jogos.jpg" alt="Imagem dos jogos">
     </a>
 
-    <a href="jogos.html" class="botao">Jogos</a>
+    <a href="index.html" class="botao">Voltar</a>
   </main>
 
   <script>
     // Forçar sempre carregar a imagem nova (evitar cache do navegador)
-    const img = document.getElementById("img-dia");
-    img.src = "imagem.jpg?t=" + new Date().getTime();
+    const img = document.getElementById("img-jogos");
+    img.src = "jogos.jpg?t=" + new Date().getTime();
   </script>
 </body>
 </html>

@@ -1,40 +1,85 @@
-/* Estilos gerais */
+/* Fundo */
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #0077b6, #00b44e);
   margin: 0;
   font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0077b6, #00b44e);
   color: #fff;
   text-align: center;
 }
 
-/* Título */
-h1 {
-  font-size: 2rem;
-  margin: 20px;
+/* Cabeçalho fixo */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #004aad;
+  padding: 15px 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-  color: #ffffff; /* força a cor branca */
+  color: #ffffff;
+}
 
+header h2 {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #e0f7fa;
+}
+
+/* Conteúdo principal */
+main {
+  margin-top: 120px; /* espaço para não ficar atrás do cabeçalho */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Imagem */
 img {
   max-width: 90%;
-  max-height: 80vh;
+  max-height: 70vh;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(254, 0, 0, 0.3);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
   border: 5px solid #fff;
+  margin-bottom: 20px;
 }
 
 img:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Botão */
+.botao {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background: #FFD700; /* amarelo */
+  color: #000; /* texto preto para contraste */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.botao:hover {
+  background: #FFC300; /* amarelo mais vibrante no hover */
+  transform: scale(1.05);
+}
+
+.botao:hover {
+  background: #00c972;
+  transform: scale(1.05);
 }
